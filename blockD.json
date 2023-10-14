@@ -1,0 +1,32 @@
+[
+    {
+      "floor": 1,
+      "rooms": [
+        { "id": "D101", "type": 1, "occupants": [], "occupancy": false },
+        { "id": "D102", "type": 1, "occupants": [], "occupancy": false },
+        { "id": "D103", "type": 1, "occupants": [{ "rollNo": "21x203" }], "occupancy": true },
+        { "id": "D104", "type": 1, "occupants": [], "occupancy": false },
+        { "id": "D105", "type": 1, "occupants": [], "occupancy": false }
+      ]
+    },
+    {
+      "floor": 2,
+      "rooms": [
+        { "id": "D201", "type": 2, "occupants": [{ "rollNo": "21y206" }, { "rollNo": "21y207" }], "occupancy": true },
+        { "id": "D202", "type": 2, "occupants": [], "occupancy": false },
+        { "id": "D203", "type": 2, "occupants": [{ "rollNo": "21y210" }, { "rollNo": "21y211" }], "occupancy": true },
+        { "id": "D204", "type": 2, "occupants": [], "occupancy": false },
+        { "id": "D205", "type": 2, "occupants": [{ "rollNo": "21y214" }, { "rollNo": "21y215" }], "occupancy": true }
+      ]
+    },
+    {
+      "floor": 3,
+      "rooms": [
+        { "id": "D301", "type": 3, "occupants": [{ "rollNo": "22t216" }, { "rollNo": "22t217" }, { "rollNo": "22t218" }], "occupancy": true },
+        { "id": "D302", "type": 3, "occupants": [], "occupancy": false },
+        { "id": "D303", "type": 3, "occupants": [{ "rollNo": "22t222" }, { "rollNo": "22t223" }, { "rollNo": "22t224" }], "occupancy": true },
+        { "id": "D304", "type": 3, "occupants": [], "occupancy": false },
+        { "id": "D305", "type": 3, "occupants": [{ "rollNo": "22t228" }, { "rollNo": "22t229" }, { "rollNo": "22t230" }], "occupancy": true }
+      ]
+    }
+  ]

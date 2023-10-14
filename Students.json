@@ -1,0 +1,57 @@
+{
+    "students": [
+      {
+        "id": "21z233",
+        "Name": "Navaneetha Krishnan K S",
+        "Department": "CSE",
+        "Block": "A",
+        "Room": "204",
+        "Year": "1",
+        "SeaterType": "2",
+        "Due": false,
+        "Allocation": false,
+        "RoomChangeRequest": false,
+        "Phone": 9344500118
+      },
+      {
+        "id": "21z218",
+        "Name": "Hareesh S",
+        "Department": "CSE",
+        "Block": "A",
+        "Room": "100",
+        "Year": "3",
+        "SeaterType": "2",
+        "Due": true,
+        "Allocation": true,
+        "RoomChangeRequest": false,
+        "Phone": 9344500118
+      },
+      {
+        "id": "21z236",
+        "Name": "Praveen Krishna G",
+        "Department": "CSE",
+        "Block": "A",
+        "Room": "204",
+        "Year": "3",
+        "SeaterType": "2",
+        "Due": false,
+        "Allocation": false,
+        "RoomChangeRequest": true,
+        "Phone": 9344500118
+      },
+      {
+        "id": "21z326",
+        "Name": "Niranjani T",
+        "Department": "CSE",
+        "Block": "Q",
+        "Room": "123",
+        "Year": "3",
+        "SeaterType": "4",
+        "Due": false,
+        "Allocation": false,
+        "RoomChangeRequest": true,
+        "Phone": 70103500118
+      }
+    ]
+  }
+  

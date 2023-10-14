@@ -1,0 +1,32 @@
+[
+    {
+      "floor": 1,
+      "rooms": [
+        { "id": "B101", "type": 1, "occupants": [{ "rollNo": "23p401" }], "occupancy": false },
+        { "id": "B102", "type": 1, "occupants": [{ "rollNo": "23p402" }], "occupancy": false },
+        { "id": "B103", "type": 1, "occupants": [{ "rollNo": "23p403" }], "occupancy": true },
+        { "id": "B104", "type": 1, "occupants": [{ "rollNo": "23p404" }], "occupancy": false },
+        { "id": "B105", "type": 1, "occupants": [{ "rollNo": "23p405" }], "occupancy": false }
+      ]
+    },
+    {
+      "floor": 2,
+      "rooms": [
+        { "id": "B201", "type": 2, "occupants": [{ "rollNo": "21z201" }, { "rollNo": "21z202" }], "occupancy": true },
+        { "id": "B202", "type": 2, "occupants": [{ "rollNo": "21z203" }, { "rollNo": "21z204" }], "occupancy": false },
+        { "id": "B203", "type": 2, "occupants": [{ "rollNo": "21z205" }, { "rollNo": "21z206" }], "occupancy": true },
+        { "id": "B204", "type": 2, "occupants": [{ "rollNo": "21z207" }, { "rollNo": "21z208" }], "occupancy": false },
+        { "id": "B205", "type": 2, "occupants": [{ "rollNo": "21z209" }, { "rollNo": "21z210" }], "occupancy": true }
+      ]
+    },
+    {
+      "floor": 3,
+      "rooms": [
+        { "id": "B301", "type": 3, "occupants": [{ "rollNo": "21z211" }, { "rollNo": "21z212" }, { "rollNo": "21z213" }], "occupancy": true },
+        { "id": "B302", "type": 3, "occupants": [{ "rollNo": "21z214" }, { "rollNo": "21z215" }, { "rollNo": "21z216" }], "occupancy": false },
+        { "id": "B303", "type": 3, "occupants": [{ "rollNo": "21z217" }, { "rollNo": "21z218" }, { "rollNo": "21z219" }], "occupancy": true },
+        { "id": "B304", "type": 3, "occupants": [{ "rollNo": "21z220" }, { "rollNo": "21z221" }, { "rollNo": "21z222" }], "occupancy": false },
+        { "id": "B305", "type": 3, "occupants": [{ "rollNo": "21z223" }, { "rollNo": "21z224" }, { "rollNo": "21z225" }], "occupancy": true }
+      ]
+    }
+  ]
