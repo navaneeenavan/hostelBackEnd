@@ -3,27 +3,20 @@ import mongoose from "mongoose";
 
 const occupantSchema = new mongoose.Schema({
   rollNo: String,
-  // Add any other properties specific to occupants here if needed
 });
 
+// Define a schema for individual rooms
 const roomSchema = new mongoose.Schema({
-  id: Number,
+  id: String,
   type: Number,
-  occupants: [occupantSchema],
+  occupants: [occupantSchema], // Array of occupants
   occupancy: Boolean,
-  // Add any other properties specific to rooms here if needed
 });
 
-const floorSchema = new mongoose.Schema({
-  floor: Number,
-  rooms: [roomSchema],
-  // Add any other properties specific to floors here if needed
-});
-
+// Define a schema for the entire block
 const blockCSchema = new mongoose.Schema({
-  name: String, // You can include a name for the block if needed
-  floors: [floorSchema],
-  // Add any other properties specific to the BlockA data here if needed
+  floor: Number,
+  rooms: [roomSchema], // Array of rooms
 });
 
 export default mongoose.model('BlockC', blockCSchema);
