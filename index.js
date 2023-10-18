@@ -186,12 +186,13 @@ app.post("/Students/updateReallocationReason/:id", async (req, res) => {
   const { ReallocationReason } = req.body; // Get the ReallocationReason from the request
 
   console.log(req.body, "RR");
+
   try {
-    // Find the student by ID and update the ReallocationReason field
+    
     const updatedStudent = await Student.findOneAndUpdate(
       { id: id },
-      { ReallocationReason: ReallocationReason }, // Set the ReallocationReason based on the request
-      { new: true } // Ensure the updated document is returned
+      { ReallocationReason: ReallocationReason }, 
+      { new: true } 
     ).exec();
 
     console.log(updatedStudent, "UPDATE");
