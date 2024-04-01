@@ -14,7 +14,6 @@ import BlockB from "./BlockBSchema.js";
 import BlockC from "./BlockCSchema.js";
 import BlockD from "./BlockDSchema.js";
 
-
 import BlockCSchema from "./BlockCSchema.js";
 import BlockASchema from "./BlockASchema.js";
 import BlockBSchema from "./BlockBSchema.js";
@@ -161,7 +160,7 @@ app.route("/Students/updateAllocation/:id").post(async (req, res) => {
         Allocation: allocationStatus,
         Block: Block,
         Room: Room,
-        SeaterType: SeaterType
+        SeaterType: SeaterType,
       },
       { new: true } // Ensure the updated document is returned
     ).exec();
@@ -170,16 +169,12 @@ app.route("/Students/updateAllocation/:id").post(async (req, res) => {
       return res.status(404).json({ error: "Student not found" });
     }
 
-
     res.json(updatedStudent);
   } catch (error) {
     console.error("Error updating Allocation:", error);
     res.status(500).json({ error: "An error occurred" });
   }
 });
-
-
-
 
 app.post("/Students/updateReallocationReason/:id", async (req, res) => {
   const { id } = req.params; // Get the student's ID from the URL
@@ -188,11 +183,10 @@ app.post("/Students/updateReallocationReason/:id", async (req, res) => {
   console.log(req.body, "RR");
 
   try {
-    
     const updatedStudent = await Student.findOneAndUpdate(
       { id: id },
-      { ReallocationReason: ReallocationReason }, 
-      { new: true } 
+      { ReallocationReason: ReallocationReason },
+      { new: true }
     ).exec();
 
     console.log(updatedStudent, "UPDATE");
@@ -310,41 +304,41 @@ app.post("/updateOccupant/:block/:room", async (req, res) => {
   try {
     // Find all documents
     const blockDocs = await BlockSchema.find({});
-  
+
     if (!blockDocs || blockDocs.length === 0) {
       return res.status(404).json({ error: "No blocks found" });
     }
-  
+
     let foundRoom = null;
     let foundBlock = null;
-  
+
     // Loop through all block documents
     for (const blockDoc of blockDocs) {
       const { rooms } = blockDoc;
       const roomInBlock = rooms.find((r) => r.id === room);
-  
+
       if (roomInBlock) {
         foundRoom = roomInBlock;
         foundBlock = blockDoc;
         break; // Exit the loop if the room is found
       }
     }
-  
+
     if (!foundBlock || !foundRoom) {
       return res.status(404).json({ error: "Room not found" });
     }
-  
+
     // Update the room's occupants
     foundRoom.occupants.push({ rollNo });
-  
+
     // Save the updated block document back to the database
     await foundBlock.save();
-  
+
     res.json(foundBlock);
   } catch (error) {
     console.error("Error updating occupants:", error);
     res.status(500).json({ error: "An error occurred" });
-  }  
+  }
 });
 
 // Start your server
